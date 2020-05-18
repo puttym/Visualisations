@@ -4,6 +4,10 @@ from matplotlib.dates import DateFormatter
 import matplotlib.ticker as ticker
 import matplotlib
 
+"""
+Reference: https://towardsdatascience.com/visualizing-covid-19-data-beautifully-in-python-in-5-minutes-or-less-affc361b2c6a
+"""
+
 df = pd.read_csv("https://raw.githubusercontent.com/datasets/covid-19/master/data/countries-aggregated.csv", parse_dates=["Date"])
 """parse_dates=["Date"] reads the "Date" column values as datetime objects """
 
