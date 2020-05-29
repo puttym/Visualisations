@@ -87,7 +87,7 @@ ax.text(x=percapita.index[1], y=-70000, \
 fig.savefig('covid_total_cases.png', transparent=False, dpi=300, bbox_inches='tight')
 
 fig1 = plt.figure(figsize=(12, 8))
-ax1 = fig1.subplots()
+ax1 = fig1.subplots(nrows=1, ncols=1)
 percapita.plot(color=list(colors.values()), linewidth=5, ax=ax1)
 ax1.grid(color='#d4d4d4')
 ax1.set(xlabel='Date', ylabel='# Cases per 100,000 people')
